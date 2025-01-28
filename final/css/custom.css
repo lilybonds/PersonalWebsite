@@ -1,0 +1,278 @@
+:root {
+    --main-bg-color:  #3AAFA9;
+    --other-bg-color: #2B7A78;
+    --main-bg-color-rgba: rgba(253, 253, 253, .8);
+    --nav-bg-color-rgba: rgba(173, 230, 201, 0.8);
+    --main-text-color: #111111;
+    --background-odd: rgba(233, 233, 233, .8);
+    --background-even: rgba(253, 253, 233, .8);
+}
+
+* {
+    font-family: verdana;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+}
+
+main,
+article,
+section,
+h1, h2, h3, h4, h5, h6,
+nav {
+    padding: 1%;
+}
+
+html {
+    color: var(--main-text-color);
+}
+
+header {
+    background-color: var(--other-bg-color);
+    border: 3px solid black;
+    border-bottom: none;
+    border-collapse: collapse;
+}
+
+body {
+    max-width: 50em;
+    margin: auto;
+    background-color: var(--other-bg-color);
+    /* <!-- https://www.w3schools.com/html/html_images_background.asp#:~:text=To%20avoid%20the%20background%20image,repeat%20property%20to%20no%2Drepeat%20. --> */
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.index li:nth-child(odd){
+    background-color:var(--background-odd);
+}
+
+.index li:nth-child(even){
+    background-color:var(--background-even);
+}
+
+ol {
+    border: solid black;
+    border-collapse: collapse;
+    margin: auto;
+    list-style-position: inside;
+}
+
+li {
+    border: thin solid black;
+    padding: .5em;
+}
+
+li:nth-child(odd) {
+    background-color: var(--background-odd);
+}
+
+li:nth-child(even) {
+    background-color: var(--background-even);
+}
+
+li:hover {
+    background-color: lightblue;
+}
+
+main, footer {
+    background-color: var(--main-bg-color);
+}
+
+nav {
+    background-color: var(--nav-bg-color-rgba);
+    border-bottom: medium solid var(--other-bg-color);
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-indent: 3em;
+    padding-bottom: 1em;
+}
+
+a:hover {
+    color: var(--main-text-color);
+}
+
+nav a:link,
+nav a:visited {
+    color: darkblue;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+    text-decoration: underline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1%;
+}
+
+table {
+    border: solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table+p {
+    padding-top: 1em;
+}
+
+td,
+th {
+    border: thin solid black;
+    padding: .5em;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--background-odd);
+}
+
+tr:nth-child(even) {
+    background-color: var(--background-even);
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+caption {
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+cite {
+    font-size: xx-small;
+}
+
+figcaption {
+    font-size: small;
+}
+
+form {
+    background-color: var(--main-bg-color-rgba);
+    border: thin solid black;
+    clear: both;
+    max-width: 30em;
+    margin: auto;
+    padding: 1%;
+}
+
+form p {
+    text-indent: 0;
+}
+
+fieldset {
+    padding: 1%;
+}
+
+label[for^="txt"] {
+    display: block;
+}
+
+input, textarea {
+    width: 99%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: inherit;
+}
+
+legend {
+    margin-top: 1%;
+}
+
+.form form {
+    margin: auto;
+    margin-top: 1%;
+}
+
+.activePage {
+    background-color: var(--main-bg-color-rgba);
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons input {
+    background-color: lightgreen;
+    font-weight: bold;
+    font-size: larger;
+    padding: .4em;
+    width: 50%;
+}
+
+.roundedCorners {
+    border-radius: 1em;
+    border: thin solid #17252A;
+}
+
+.mistake {
+    color: red;
+    background-color: azure;
+    padding: .5em;
+    text-indent: 0;
+}
+
+.founders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    width: 60%;
+    margin: auto;
+}
+
+.founders figure {
+    margin: 0;
+}
+
+.contact {
+    display: grid;
+    grid-template-areas: "box1 box1" "box2 box3" "box4 box4";
+    grid-column-gap: 1em;
+}
+
+.contact p:nth-child(4) {
+    grid-column: span 2;
+}
+
+.array td:nth-child(odd) {
+    width: 80%
+}
+
+.array td:nth-child(even) {
+    text-align: center;
+}
+
+.array footer {
+    padding-top: 4em;
+}
+
+.array figure {
+    width: 40%;
+    margin: auto;
+}
+
+.about footer {
+    padding-top: 3em;
+}
